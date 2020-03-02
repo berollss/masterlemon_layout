@@ -1,0 +1,24 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.palette {
+  display: flex;
+
+  div {
+    height: 15em;
+    width: 10%;
+    text-align: center;
+    color: $fontColor;
+    margin: 0.2em;
+    margin-top: 2em;
+    line-height: 15em;
+  }
+}
+
+.base-color {
+  background-color: $baseColor1;
+}
+
+@include createColorPalette("palette1", $baseColor1, 4, 10);
+@include createColorPalette("palette2", $baseColor2, 4, 10);
+@include createColorPalette("palette3", $baseColor3, 4, 10);

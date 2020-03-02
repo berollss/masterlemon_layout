@@ -1,0 +1,16 @@
+@mixin createColorPalette($palette, $color, $cols, $percentage) {
+  .#{$palette}-baseColor {
+    background-color: $color;
+  }
+
+  @for $i from 1 through $cols {
+    .#{$palette}-darken#{$i} {
+      background-color: darken($color, $percentage);
+    }
+
+    .#{$palette}-lighten#{$i} {
+      background-color: lighten($color, $percentage);
+    }
+    $percentage: $percentage + 10;
+  }
+}
