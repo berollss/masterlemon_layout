@@ -15,10 +15,6 @@
   }
 }
 
-.base-color {
-  background-color: $baseColor1;
-}
-
 @include createColorPalette("palette1", $baseColor1, 4, 10);
 @include createColorPalette("palette2", $baseColor2, 4, 10);
 @include createColorPalette("palette3", $baseColor3, 4, 10);
