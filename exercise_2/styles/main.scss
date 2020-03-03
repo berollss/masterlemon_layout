@@ -1,0 +1,39 @@
+@import "_themeA.scss";
+//@import "_themeB.scss";
+
+body {
+  font-size: 1.5rem;
+  margin: 3rem 2rem;
+  font-family: $base-font;
+}
+div {
+  width: 10rem;
+  height: 7rem;
+  line-height: 7rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  text-align: center;
+  background-color: $base-color;
+
+  &.important-box {
+    background-color: darken($base-color, 30);
+  }
+
+  &.warning-box {
+    background-color: lighten($base-color, 40);
+  }
+
+  &.shadow-box {
+    line-height: 3rem;
+    background-color: white;
+    box-shadow: $box-shadow;
+  }
+}
+
+.principal-font {
+  font-family: $principal-font;
+}
+
+.secondary-font {
+  font-family: $secondary-font;
+}
