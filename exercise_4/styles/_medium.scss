@@ -1,0 +1,13 @@
+.container {
+    grid-template-rows: auto;
+}
+
+.item {
+    grid-column: 1 / 4;
+    grid-row: auto;
+}
+
+.menu {
+    flex-direction: row;
+    align-items: center;
+}
