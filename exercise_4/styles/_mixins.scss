@@ -1,0 +1,41 @@
+@mixin small {
+  .container {
+    grid-template-rows: 1em auto auto;
+  }
+
+  .item {
+    padding: 0em;
+  }
+
+  .menu {
+    display: inline;
+  }
+}
+
+@mixin medium {
+  .container {
+    grid-template-rows: auto;
+  }
+
+  .item {
+    grid-column: 1 / 4;
+    grid-row: auto;
+  }
+
+  .menu {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@mixin large {
+  .container {
+    width: 100%;
+  }
+}
+
+@mixin extra-large {
+  .container {
+    width: 75%;
+  }
+}

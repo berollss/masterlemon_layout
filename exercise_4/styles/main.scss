@@ -1,4 +1,6 @@
-@import "./sections.scss";
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import "./_reset.scss";
 
 body {
   display: flex;
@@ -24,26 +26,30 @@ body {
 }
 
 .sectionA {
-  background-color: yellow;
+  background-color: $sectionABackgroundColor;
 }
 
 .sectionB {
-  background-color: blue;
+  background-color: $sectionBBackgroundColor;
 }
 
 .navigation-bar {
-  background-color: pink;
+  background-color: $navBarBackgroundColor;
   grid-row: 1/3;
 }
 
+@media only screen and (min-width: 75em) {
+  @include extra-large;
+}
+
 @media only screen and (max-width: 62em) {
-  @import './large.scss';
+  @include large;
 }
 
 @media only screen and (max-width: 48em) {
-  @import './medium.scss';
+  @include medium;
 }
 
-@media only screen and (max-width: 37em) {
-  @import './small.scss';
+@media only screen and (max-width: 37.5em) {
+  @include small;
 }

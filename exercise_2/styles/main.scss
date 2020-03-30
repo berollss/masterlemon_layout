@@ -1,3 +1,4 @@
+@import "./_reset.scss";
 @import "_themeA.scss";
 //@import "_themeB.scss";
 
@@ -27,13 +28,16 @@ div {
     line-height: 3rem;
     background-color: white;
     box-shadow: $box-shadow;
+    margin-top: 1.5rem;
   }
 }
 
 .principal-font {
   font-family: $principal-font;
+  margin-top: 1.5rem;
 }
 
 .secondary-font {
   font-family: $secondary-font;
+  margin-top: 1.5rem;
 }
